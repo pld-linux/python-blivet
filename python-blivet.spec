@@ -26,11 +26,11 @@ BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	btrfs-progs
 Requires:	cryptsetup-luks
 Requires:	device-mapper >= %{dmver}
-Requires:	device-mapper-multipath
 Requires:	dosfstools
 Requires:	e2fsprogs >= %{e2fsver}
 Requires:	lvm2
 Requires:	mdadm
+Requires:	multipath-tools
 Requires:	parted >= %{partedver}
 Requires:	python
 Requires:	python-cryptsetup >= %{pythoncryptsetupver}
@@ -66,6 +66,10 @@ cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 	--root=$RPM_BUILD_ROOT
 
 %py_postclean
+
+# unsupported locale
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ilo
+
 %find_lang %{module}
 
 %clean
