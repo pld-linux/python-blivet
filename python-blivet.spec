@@ -20,6 +20,7 @@ Source0:	http://pkgs.fedoraproject.org/repo/pkgs/python-blivet/%{module}-%{versi
 # Source0-md5:	30592cc8261fb936023b9d466dec68da
 URL:		http://fedoraproject.org/wiki/blivet
 BuildRequires:	gettext
+BuildRequires:	gettext-devel
 BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
