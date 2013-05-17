@@ -26,7 +26,7 @@ Requires:	python-cryptsetup >= 0.1.1
 Requires:	python-parted >= 2.5-2
 Requires:	python-pyblock >= 0.45
 Requires:	python-pykickstart >= 1.99.22
-Requires:	util-linux >= 2.15.1
+Requires:	util-linux >= 2.22.2-6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
