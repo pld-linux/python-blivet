@@ -1,14 +1,3 @@
-# Versions of required components (done so we make sure the buildrequires
-# match the requires versions of things).
-%define dmver 1.02.17-6
-%define pykickstartver 1.99.22
-%define partedver 1.8.1
-%define pypartedver 2.5-2
-%define pythonpyblockver 0.45
-%define e2fsver 1.41.0
-%define pythoncryptsetupver 0.1.1
-%define utillinuxver 2.15.1
-
 %define module blivet
 Summary:	A Python module for system storage configuration
 Name:		python-blivet
@@ -25,19 +14,19 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	btrfs-progs
 Requires:	cryptsetup-luks
-Requires:	device-mapper >= %{dmver}
+Requires:	device-mapper >= 1.02.17-6
 Requires:	dosfstools
-Requires:	e2fsprogs >= %{e2fsver}
+Requires:	e2fsprogs >= 1.41.0
 Requires:	lvm2 >= 2.02.98-3
 Requires:	mdadm
 Requires:	multipath-tools
-Requires:	parted >= %{partedver}
+Requires:	parted >= 1.8.1
 Requires:	python
-Requires:	python-cryptsetup >= %{pythoncryptsetupver}
-Requires:	python-parted >= %{pypartedver}
-Requires:	python-pyblock >= %{pythonpyblockver}
-Requires:	python-pykickstart >= %{pykickstartver}
-Requires:	util-linux >= %{utillinuxver}
+Requires:	python-cryptsetup >= 0.1.1
+Requires:	python-parted >= 2.5-2
+Requires:	python-pyblock >= 0.45
+Requires:	python-pykickstart >= 1.99.22
+Requires:	util-linux >= 2.15.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
