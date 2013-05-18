@@ -7,6 +7,7 @@ License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://pkgs.fedoraproject.org/repo/pkgs/python-blivet/%{module}-%{version}.tar.gz/30592cc8261fb936023b9d466dec68da/%{module}-%{version}.tar.gz
 # Source0-md5:	30592cc8261fb936023b9d466dec68da
+Patch0:		lvm-lvmetad.patch
 URL:		http://fedoraproject.org/wiki/blivet
 BuildRequires:	gettext-devel
 BuildRequires:	python-distribute
@@ -36,6 +37,7 @@ modifying storage configuration.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1
 
 %build
 %{__make}

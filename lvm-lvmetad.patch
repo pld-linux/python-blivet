@@ -1,0 +1,11 @@
+--- blivet-0.14/blivet/devicelibs/lvm.py~	2013-05-15 21:55:45.000000000 +0300
++++ blivet-0.14/blivet/devicelibs/lvm.py	2013-05-18 13:16:24.024863412 +0300
+@@ -193,7 +193,7 @@
+         raise LVMError("pvremove failed for %s: %s" % (device, msg))
+ 
+ def pvscan(device):
+-    args = ["pvscan", "--cache",] + \
++    args = ["pvscan"] + \
+             _getConfigArgs() + \
+             [device]
+ 
