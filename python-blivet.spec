@@ -20,7 +20,7 @@ Requires:	dosfstools
 Requires:	e2fsprogs >= 1.41.0
 Requires:	lvm2 >= 2.02.98-3
 Requires:	mdadm
-Requires:	multipath-tools
+Requires:	multipath-tools >= 0.4.9-10
 Requires:	parted >= 1.8.1
 Requires:	python
 Requires:	python-cryptsetup >= 0.1.1
