@@ -12,7 +12,7 @@ URL:		http://fedoraproject.org/wiki/blivet
 BuildRequires:	gettext-tools
 BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	btrfs-progs
 Requires:	cryptsetup-luks
 Requires:	device-mapper >= 1.02.17-6
