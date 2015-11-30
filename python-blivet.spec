@@ -2,7 +2,7 @@
 Summary:	A Python module for system storage configuration
 Name:		python-blivet
 Version:	0.14
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://pkgs.fedoraproject.org/repo/pkgs/python-blivet/%{module}-%{version}.tar.gz/30592cc8261fb936023b9d466dec68da/%{module}-%{version}.tar.gz
